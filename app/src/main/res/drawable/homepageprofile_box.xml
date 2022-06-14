@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Style for "homepagepr" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item android:width="442dp" android:height="562dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="5dp" android:color="#59e8e8e8" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    tools:context=".CouponsPage">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/greenbackgrounficons"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/blueCard"
+        android:layout_width="144dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/coupon_card_blue" />
+
+    <ImageView
+        android:id="@+id/couponBluePath"
+        android:layout_width="92dp"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/couponbluepath"
+        app:layout_constraintTop_toTopOf="@+id/blueCard"
+        app:layout_constraintBottom_toBottomOf="@+id/blueCard"
+        app:layout_constraintStart_toStartOf="@+id/blueCard"
+        app:layout_constraintEnd_toEndOf="@+id/blueCard" />
+
+    <ImageView
+        android:id="@+id/greenCard"
+        android:layout_width="144dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/coupon_card_green" />
+
+    <ImageView
+        android:id="@+id/couponGreenPath"
+        android:layout_width="92dp"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/coupongreenpath"
+        app:layout_constraintTop_toTopOf="@+id/greenCard"
+        app:layout_constraintBottom_toBottomOf="@+id/greenCard"
+        app:layout_constraintStart_toStartOf="@+id/greenCard"
+        app:layout_constraintEnd_toEndOf="@+id/greenCard" />
+
+    <ImageView
+        android:id="@+id/purpleCard"
+        android:layout_width="144dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/coupon_card_purple" />
+
+    <ImageView
+        android:id="@+id/couponPurplePath"
+        android:layout_width="92dp"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/couponpurplepath"
+        app:layout_constraintTop_toTopOf="@+id/purpleCard"
+        app:layout_constraintBottom_toBottomOf="@+id/purpleCard"
+        app:layout_constraintStart_toStartOf="@+id/purpleCard"
+        app:layout_constraintEnd_toEndOf="@+id/purpleCard" />
+
+    <ImageView
+        android:id="@+id/pinkCard"
+        android:layout_width="144dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/coupon_card_pink" />
+
+    <ImageView
+        android:id="@+id/couponPinkPath"
+        android:layout_width="92dp"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/couponpinkpath"
+        app:layout_constraintTop_toTopOf="@+id/pinkCard"
+        app:layout_constraintBottom_toBottomOf="@+id/pinkCard"
+        app:layout_constraintStart_toStartOf="@+id/pinkCard"
+        app:layout_constraintEnd_toEndOf="@+id/pinkCard" />
+
+
+    <ImageView
+        android:id="@+id/yellowCard"
+        android:layout_width="144dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/coupon_card_yellow" />
+
+    <ImageView
+        android:id="@+id/couponYellowPath"
+        android:layout_width="92dp"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/couponyellowpath"
+        app:layout_constraintTop_toTopOf="@+id/yellowCard"
+        app:layout_constraintBottom_toBottomOf="@+id/yellowCard"
+        app:layout_constraintStart_toStartOf="@+id/yellowCard"
+        app:layout_constraintEnd_toEndOf="@+id/yellowCard" />
+
+    <ImageView
+        android:id="@+id/orangeCard"
+        android:layout_width="144dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/coupon_card_orange" />
+
+    <ImageView
+        android:id="@+id/couponOrangePath"
+        android:layout_width="92dp"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/couponorangepath"
+        app:layout_constraintTop_toTopOf="@+id/orangeCard"
+        app:layout_constraintBottom_toBottomOf="@+id/orangeCard"
+        app:layout_constraintStart_toStartOf="@+id/orangeCard"
+        app:layout_constraintEnd_toEndOf="@+id/orangeCard" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

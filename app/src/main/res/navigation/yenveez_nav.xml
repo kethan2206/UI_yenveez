@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yenveez_nav"
+    app:startDestination="@id/navBar">
+
+    <fragment
+        android:id="@+id/navBar"
+        android:name="com.example.ui_yenveez.NavBar"
+        android:label="fragment_nav_bar"
+        tools:layout="@layout/fragment_nav_bar" />
+    <fragment
+        android:id="@+id/navBarSecond"
+        android:name="com.example.ui_yenveez.NavBarSecond"
+        android:label="fragment_nav_bar_second"
+        tools:layout="@layout/fragment_nav_bar_second" />
+    <fragment
+        android:id="@+id/navBarThird"
+        android:name="com.example.ui_yenveez.NavBarThird"
+        android:label="fragment_nav_bar_third"
+        tools:layout="@layout/fragment_nav_bar_third" />
+    <fragment
+        android:id="@+id/navBarFourth"
+        android:name="com.example.ui_yenveez.NavBarFourth"
+        android:label="fragment_nav_bar_fourth"
+        tools:layout="@layout/fragment_nav_bar_fourth" />
+    <fragment
+        android:id="@+id/navBarFifth"
+        android:name="com.example.ui_yenveez.NavBarFifth"
+        android:label="fragment_nav_bar_fifth"
+        tools:layout="@layout/fragment_nav_bar_fifth" />
+</navigation>

@@ -4,45 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/combinedbackground"
+    android:background="@drawable/screen_background"
     tools:context=".Signup">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/greenbackgrounficons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/loginBox"
+        android:layout_width="485dp"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagline"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/loginbox1"
+        tools:ignore="ContentDescription" />
 
 
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.100000024"
         app:srcCompat="@drawable/blacklogo1"
-        tools:ignore="ContentDescription"/>
+        tools:ignore="ContentDescription" />
+
+
 
     <ImageView
-        android:id="@+id/loginBox"
-        android:layout_width="500dp"
-        android:layout_height="600dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/loginbox" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tagline"
+        android:layout_width="260dp"
+        android:layout_height="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.01999998"
         app:srcCompat="@drawable/tagline"
-        tools:ignore="ContentDescription"/>
+        tools:ignore="ContentDescription" />
 
     <EditText
         android:id="@+id/username"
@@ -58,8 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/loginBox"
-        app:layout_constraintVertical_bias="0.22000003"
-        />
+        app:layout_constraintVertical_bias="0.22000003" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -87,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="@id/loginBox"
         app:layout_constraintStart_toStartOf="@id/loginBox"
         app:layout_constraintTop_toBottomOf="@id/username"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintVertical_bias="0.100000024" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -114,7 +126,7 @@
         app:layout_constraintEnd_toEndOf="@id/loginBox"
         app:layout_constraintStart_toStartOf="@id/loginBox"
         app:layout_constraintTop_toBottomOf="@id/email"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintVertical_bias="0.100000024" />
 
     <ImageView
         android:id="@+id/padlockPassword"
@@ -141,7 +153,7 @@
         app:layout_constraintEnd_toEndOf="@id/loginBox"
         app:layout_constraintStart_toStartOf="@id/loginBox"
         app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintVertical_bias="0.100000024" />
 
     <ImageView
         android:id="@+id/padlockConfirmPassword"
@@ -161,11 +173,18 @@
         android:layout_height="wrap_content"
         android:background="@drawable/signinbutton"
         android:text="@string/signup_button"
+        android:textAllCaps="false"
         android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/loginBox"
         app:layout_constraintEnd_toEndOf="@+id/loginBox"
         app:layout_constraintStart_toStartOf="@+id/loginBox"
         app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
-        app:layout_constraintVertical_bias="0.00999999" />
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

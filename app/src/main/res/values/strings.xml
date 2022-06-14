@@ -7,4 +7,10 @@
     <string name="signup_button">Join us</string>
     <string name="signin_text">Sign in</string>
     <string name="signup_text">Sign up</string>
+    <string name="energy">Total energy generated</string>
+    <string name="points">Total Veez Points</string>
+    <string name="stat">Congrats username!!! you have energized a 10W bulb for 125 seconds.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_fragment">first fragment</string>
 </resources>

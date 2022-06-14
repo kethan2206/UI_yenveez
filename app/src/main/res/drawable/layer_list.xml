@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Style for "homepageba" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item android:width="439dp" android:height="812dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffe3e3e3" />
+        </shape>
+    </item>
+
+
+</selector>
