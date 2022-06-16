@@ -7,6 +7,22 @@
     android:background="@drawable/screen_background"
     tools:context=".WalkingActivity">
 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/activityBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998"
+        app:lottie_autoPlay="true"
+        app:lottie_ignoreDisabledSystemAnimations="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/activitypagebackground"
+        tools:ignore="contentDescription" />
+
     <ImageView
         android:id="@+id/activityWalkingBackground"
         android:layout_width="wrap_content"
@@ -46,14 +62,27 @@
 
     <ImageView
         android:id="@+id/actvityScoreboard"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="172dp"
+        android:layout_height="172dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92"
-        app:srcCompat="@drawable/activityscoreboard" />
+        app:layout_constraintVertical_bias="0.94"
+        app:srcCompat="@drawable/activityscoreboard1" />
+
+    <ImageView
+        android:id="@+id/actvityScoreboard2"
+        android:layout_width="172dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94"
+        app:srcCompat="@drawable/activityscoreboard1" />
 
     <TextView
         android:id="@+id/activityEnergyGenerated"
@@ -61,14 +90,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/comic_neue_bold"
         android:text="Energy generated"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/actvityScoreboard"
         app:layout_constraintEnd_toEndOf="@+id/actvityScoreboard"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="@+id/actvityScoreboard"
         app:layout_constraintTop_toTopOf="@+id/actvityScoreboard"
-        app:layout_constraintVertical_bias="0.14999998" />
+        app:layout_constraintVertical_bias="0.27999997" />
 
 
     <TextView
@@ -77,14 +108,38 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/comic_neue_bold"
         android:text="Veez points"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actvityScoreboard2"
+        app:layout_constraintEnd_toEndOf="@+id/actvityScoreboard2"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/actvityScoreboard2"
+        app:layout_constraintTop_toTopOf="@+id/actvityScoreboard2"
+        app:layout_constraintVertical_bias="0.27999997" />
+
+    <ImageView
+        android:id="@+id/activityEnergyIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/actvityScoreboard"
         app:layout_constraintEnd_toEndOf="@+id/actvityScoreboard"
-        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="@+id/actvityScoreboard"
         app:layout_constraintTop_toTopOf="@+id/actvityScoreboard"
-        app:layout_constraintVertical_bias="0.14999998" />
+        app:srcCompat="@drawable/activityenergygeneratedicon" />
+
+    <ImageView
+        android:id="@+id/activityVeezPointsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/actvityScoreboard2"
+        app:layout_constraintEnd_toEndOf="@+id/actvityScoreboard2"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="@+id/actvityScoreboard2"
+        app:layout_constraintTop_toTopOf="@+id/actvityScoreboard2"
+        app:srcCompat="@drawable/logogreentriangle" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
