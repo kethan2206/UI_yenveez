@@ -10,22 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UI_Yenveez">
         <activity
-            android:name=".Intro3"
+            android:name=".EditProfile"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
         <activity
-            android:name=".Intro2"
+            android:name=".WalkingActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".Intro"
+            android:name=".Intro3"
             android:exported="false"></activity>
+        <activity
+            android:name=".Intro2"
+            android:exported="true" />
+        <activity
+            android:name=".Intro"
+            android:exported="false" />
         <activity
             android:name=".CouponsPage"
             android:exported="false" />

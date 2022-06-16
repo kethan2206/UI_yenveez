@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    tools:context=".WalkingActivity">
+
+    <ImageView
+        android:id="@+id/activityWalkingBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/activitybackgrounddesignofwalking" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/activityWalking"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="@+id/activityWalkingBackground"
+        app:layout_constraintEnd_toEndOf="@+id/activityWalkingBackground"
+        app:layout_constraintStart_toStartOf="@+id/activityWalkingBackground"
+        app:layout_constraintTop_toTopOf="@+id/activityWalkingBackground"
+        app:layout_constraintVertical_bias="0.32999998"
+        app:lottie_autoPlay="true"
+        app:lottie_ignoreDisabledSystemAnimations="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/activitywalking"
+        tools:ignore="contentDescription" />
+
+    <ImageView
+        android:id="@+id/activityBulb"
+        android:layout_width="340dp"
+        android:layout_height="338dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/activity1bulbshinningprogress" />
+
+    <ImageView
+        android:id="@+id/actvityScoreboard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/activityscoreboard" />
+
+    <TextView
+        android:id="@+id/activityEnergyGenerated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="Energy generated"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actvityScoreboard"
+        app:layout_constraintEnd_toEndOf="@+id/actvityScoreboard"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/actvityScoreboard"
+        app:layout_constraintTop_toTopOf="@+id/actvityScoreboard"
+        app:layout_constraintVertical_bias="0.14999998" />
+
+
+    <TextView
+        android:id="@+id/activityVeezpoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="Veez points"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/actvityScoreboard"
+        app:layout_constraintEnd_toEndOf="@+id/actvityScoreboard"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="@+id/actvityScoreboard"
+        app:layout_constraintTop_toTopOf="@+id/actvityScoreboard"
+        app:layout_constraintVertical_bias="0.14999998" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
